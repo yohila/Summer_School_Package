@@ -83,15 +83,15 @@ def test_generate_lowrank_continuous_shape(n_samples, K): #case 7 normal case
     assert samples.shape == (n_samples, 2)
 
  #case 8
-# def test_generate_lowrank_continuous_shape_issues_warning_for_large_n_samples():
-#     n_samples =16
-#     K=5
-#     with pytest.warns(UserWarning,
-#                        match="The low rank estimator won't perform better than a classic histogram estimator for samples generated with a rank K > n_samples**(1/4)"):
-#         samples = generate_lowrank_discrete(n_samples=n_samples,K=K)
+def test_generate_lowrank_continuous_shape_issues_warning_for_large_n_samples():
+    n_samples =16
+    K=5
+    with pytest.warns(UserWarning,
+                       match="The low rank estimator won't perform better than a classic histogram estimator for samples generated with a rank K > n_samples**(1/4)"):
+        samples = generate_lowrank_discrete(n_samples=n_samples,K=K)
         
-#         if K > n_samples**(1/4):
-#             warnings.warn("The low rank estimator won't perform better than a classic histogram estimator for samples generated with a rank K > n_samples**(1/4)", UserWarning)
+        if K > n_samples**(1/4):
+            warnings.warn("The low rank estimator won't perform better than a classic histogram estimator for samples generated with a rank K > n_samples**(1/4)", UserWarning)
 
 # def test_pdf_input_range():
 #     model = Continuous()
