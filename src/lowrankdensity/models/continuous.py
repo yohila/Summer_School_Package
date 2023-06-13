@@ -7,7 +7,7 @@ Author : Laurène DAVID
 import numpy as np
 import warnings
 import math
-from lowrankdensity.models import Discrete
+from lowrankdensity.models.discrete import Discrete
 
 
 class Continuous(Discrete):
