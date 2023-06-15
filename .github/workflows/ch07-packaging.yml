@@ -1,4 +1,4 @@
-name: Packaging (chapter 7)
+name: Packaging
 
 on:
   - push
@@ -11,9 +11,7 @@ jobs:
       matrix:
         python:
           - version: "3.10"
-            toxenv: "py310"
           - version: "3.9"
-            toxenv: "py39"
     steps:
       - uses: actions/checkout@v3
 
@@ -21,11 +19,6 @@ jobs:
         with:
           python-version: ${{ matrix.python.version }}
 
-      # - name: Install tox
-      #   run: python -m pip install tox
-
-      # - name: Run pytest
-      #   run: tox -e ${{ matrix.python.toxenv }}
       - name: Install pytest
         run: python -m pip install pytest pytest-cov numpy scipy .
 
@@ -40,9 +33,7 @@ jobs:
       matrix:
         python:
           - version: "3.10"
-            toxenv: "py310"
           - version: "3.9"
-            toxenv: "py39"
     steps:
       - uses: actions/checkout@v3
 
@@ -50,11 +41,6 @@ jobs:
         with:
           python-version: ${{ matrix.python.version }}
 
-      # - name: Install tox
-      #   run: python -m pip install tox
-
-      # - name: Run pytest
-      #   run: tox -e ${{ matrix.python.toxenv }}
       - name: Install pytest
         run: python -m pip install pytest pytest-cov numpy scipy .
 
@@ -68,9 +54,7 @@ jobs:
       matrix:
         python:
           - version: "3.10"
-            toxenv: "py310"
           - version: "3.9"
-            toxenv: "py39"
     steps:
       - uses: actions/checkout@v3
 
@@ -78,11 +62,6 @@ jobs:
         with:
           python-version: ${{ matrix.python.version }}
 
-      # - name: Install tox
-      #   run: python -m pip install tox
-
-      # - name: Run pytest
-      #   run: tox -e ${{ matrix.python.toxenv }}
       - name: Install pytest
         run: python -m pip install pytest pytest-cov numpy scipy .
 
