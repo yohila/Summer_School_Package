@@ -1,7 +1,7 @@
-name: Packaging
+name: Packaging # nom de workflow 
 
 on:
-  - push
+  - push # trigger everytime you push
 
 jobs:
   test_ubuntu:
@@ -15,11 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-python@v4.0.0
+      - uses: actions/setup-python@v4.0.0 # installer python
         with:
           python-version: ${{ matrix.python.version }}
 
-      - name: Install pytest
+      - name: Install pytest # installer package dependencies
         run: python -m pip install pytest pytest-cov numpy scipy .
 
       - name: Run pytest
