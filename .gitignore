@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Venv
+venv_lowrankdensity/
+
 # Distribution / packaging
 .Python
 build/
