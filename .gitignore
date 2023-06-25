@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # Venv
-venv_lowrankdensity/
+venv/
 
 # Distribution / packaging
 .Python
