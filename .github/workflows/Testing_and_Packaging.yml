@@ -1,6 +1,6 @@
 
 
-name: Testinng and Packaging
+name: Testing and Packaging
 on:
   - push
 jobs:
