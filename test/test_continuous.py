@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 from lowrankdensity.models.continuous import Continuous
-from lowrankdensity.datasets._generate_samples import generate_lowrank_continuous
+from lowrankdensity.datasets.generate_samples import generate_lowrank_continuous
 
 
 def test_continuous_1d_empty_parameter_error():  # typeerror case 1 empty parameters error for continuous_1d

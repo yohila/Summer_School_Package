@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 import warnings
-from lowrankdensity.datasets._generate_samples import generate_lowrank_discrete, generate_lowrank_continuous
+from lowrankdensity.datasets.generate_samples import generate_lowrank_discrete, generate_lowrank_continuous
 
 
 # Parameterize the function

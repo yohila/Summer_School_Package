@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 from lowrankdensity.models.discrete import Discrete
-from lowrankdensity.datasets._generate_samples import generate_lowrank_discrete
+from lowrankdensity.datasets.generate_samples import generate_lowrank_discrete
 
 
 def test_compute_histograms_shape_Y1max():  # case 1 Y1max shape histogram
